@@ -12,12 +12,19 @@ struct ContentView: View {
     @EnvironmentObject var users: UserModelController
     
     var body: some View {
-        Text(users.all.first?.name.last ?? "")
+        List {
+            ForEach(users.all) { user in
+                Text(user.name.last)
+            }
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
+    static let users = UserModelController.mock()
+
     static var previews: some View {
         ContentView()
+            .environmentObject(users)
     }
 }

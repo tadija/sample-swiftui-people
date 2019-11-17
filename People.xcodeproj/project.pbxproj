@@ -15,6 +15,7 @@
 		8B10431A2380BED1009BD218 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B1043182380BED1009BD218 /* LaunchScreen.storyboard */; };
 		8B1043222380BEF7009BD218 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1043212380BEF7009BD218 /* User.swift */; };
 		8B1043242380C07E009BD218 /* UserModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1043232380C07E009BD218 /* UserModelController.swift */; };
+		8BC008B92380CEEA0071BD80 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = 8BA3E0752380CA5700B1C788 /* users.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		8B10431B2380BED1009BD218 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B1043212380BEF7009BD218 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		8B1043232380C07E009BD218 /* UserModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModelController.swift; sourceTree = "<group>"; };
+		8BA3E0752380CA5700B1C788 /* users.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				8B1043112380BECF009BD218 /* ContentView.swift */,
 				8B1043212380BEF7009BD218 /* User.swift */,
 				8B1043232380C07E009BD218 /* UserModelController.swift */,
+				8BA3E0752380CA5700B1C788 /* users.json */,
 				8B1043132380BED1009BD218 /* Assets.xcassets */,
 				8B1043182380BED1009BD218 /* LaunchScreen.storyboard */,
 				8B10431B2380BED1009BD218 /* Info.plist */,
@@ -139,6 +142,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BC008B92380CEEA0071BD80 /* users.json in Resources */,
 				8B10431A2380BED1009BD218 /* LaunchScreen.storyboard in Resources */,
 				8B1043172380BED1009BD218 /* Preview Assets.xcassets in Resources */,
 				8B1043142380BED1009BD218 /* Assets.xcassets in Resources */,

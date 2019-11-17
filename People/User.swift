@@ -8,7 +8,12 @@
 
 import Foundation
 
-struct User: Codable {
+struct User: Codable, Identifiable {
+    var id: UUID {
+        return login.uuid
+    }
+
+    let login: Login
     let name: Name
     let dob: Dob
     let picture: Picture
@@ -16,6 +21,9 @@ struct User: Codable {
 }
 
 extension User {
+    struct Login: Codable {
+        let uuid: UUID
+    }
     struct Name: Codable {
         let first: String
         let last: String
