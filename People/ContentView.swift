@@ -9,12 +9,12 @@
 import SwiftUI
 
 struct ContentView: View {
-    @EnvironmentObject var users: UserModelController
+    @EnvironmentObject var store: UserStore
     
     var body: some View {
         NavigationView {
             List {
-                ForEach(users.all) { user in
+                ForEach(store.users) { user in
                     UserRow(user: user)
                 }
             }
@@ -25,10 +25,10 @@ struct ContentView: View {
 }
 
 struct ContentView_Previews: PreviewProvider {
-    static let users = UserModelController.mock()
+    static let store = UserStore(users: UserDataLoader.mock())
 
     static var previews: some View {
         ContentView()
-            .environmentObject(users)
+            .environmentObject(store)
     }
 }
