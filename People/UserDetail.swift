@@ -13,7 +13,7 @@ struct UserDetail: View {
 
     var body: some View {
         VStack {
-            Image(systemName: "photo")
+            RemoteImage(url: user.picture.large)
             Text("Age: \(user.dob.age)")
             Text(user.email)
         }

@@ -14,7 +14,7 @@ struct UserRow: View {
     var body: some View {
         NavigationLink(destination: UserDetail(user: user)) {
             HStack {
-                Image(systemName: "photo")
+                RemoteImage(url: user.picture.thumbnail)
 
                 VStack(alignment: .leading) {
                     Text(user.name.description)

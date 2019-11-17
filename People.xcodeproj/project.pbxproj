@@ -17,6 +17,8 @@
 		8B1043242380C07E009BD218 /* UserModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1043232380C07E009BD218 /* UserModelController.swift */; };
 		8B3DFBF623818601009D5617 /* UserRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3DFBF523818601009D5617 /* UserRow.swift */; };
 		8B3DFBF823818A3F009D5617 /* UserDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3DFBF723818A3F009D5617 /* UserDetail.swift */; };
+		8B3DFBFA23819BD7009D5617 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3DFBF923819BD7009D5617 /* ImageLoader.swift */; };
+		8B3DFBFC23819CF1009D5617 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3DFBFB23819CF1009D5617 /* RemoteImage.swift */; };
 		8BC008B92380CEEA0071BD80 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = 8BA3E0752380CA5700B1C788 /* users.json */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +35,8 @@
 		8B1043232380C07E009BD218 /* UserModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModelController.swift; sourceTree = "<group>"; };
 		8B3DFBF523818601009D5617 /* UserRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRow.swift; sourceTree = "<group>"; };
 		8B3DFBF723818A3F009D5617 /* UserDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetail.swift; sourceTree = "<group>"; };
+		8B3DFBF923819BD7009D5617 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		8B3DFBFB23819CF1009D5617 /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
 		8BA3E0752380CA5700B1C788 /* users.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,6 +77,8 @@
 				8B3DFBF723818A3F009D5617 /* UserDetail.swift */,
 				8B1043212380BEF7009BD218 /* User.swift */,
 				8B1043232380C07E009BD218 /* UserModelController.swift */,
+				8B3DFBF923819BD7009D5617 /* ImageLoader.swift */,
+				8B3DFBFB23819CF1009D5617 /* RemoteImage.swift */,
 				8BA3E0752380CA5700B1C788 /* users.json */,
 				8B1043132380BED1009BD218 /* Assets.xcassets */,
 				8B1043182380BED1009BD218 /* LaunchScreen.storyboard */,
@@ -162,12 +168,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B3DFBFC23819CF1009D5617 /* RemoteImage.swift in Sources */,
 				8B1043222380BEF7009BD218 /* User.swift in Sources */,
 				8B3DFBF823818A3F009D5617 /* UserDetail.swift in Sources */,
 				8B10430E2380BECF009BD218 /* AppDelegate.swift in Sources */,
 				8B1043102380BECF009BD218 /* SceneDelegate.swift in Sources */,
 				8B1043122380BECF009BD218 /* ContentView.swift in Sources */,
 				8B3DFBF623818601009D5617 /* UserRow.swift in Sources */,
+				8B3DFBFA23819BD7009D5617 /* ImageLoader.swift in Sources */,
 				8B1043242380C07E009BD218 /* UserModelController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
