@@ -65,3 +65,9 @@ final class UserModelController: ObservableObject {
         }.resume()
     }
 }
+
+extension User {
+    static var mocked: User {
+        return UserModelController.mock().all.first!
+    }
+}

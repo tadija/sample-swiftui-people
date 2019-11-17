@@ -12,10 +12,14 @@ struct ContentView: View {
     @EnvironmentObject var users: UserModelController
     
     var body: some View {
-        List {
-            ForEach(users.all) { user in
-                Text(user.name.last)
+        NavigationView {
+            List {
+                ForEach(users.all) { user in
+                    UserRow(user: user)
+                }
             }
+            .navigationBarTitle("People")
+            .listStyle(GroupedListStyle())
         }
     }
 }

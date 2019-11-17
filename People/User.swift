@@ -13,20 +13,21 @@ struct User: Codable, Identifiable {
         return login.uuid
     }
 
-    let login: Login
     let name: Name
+    let email: String
+    let login: Login
     let dob: Dob
     let picture: Picture
     let nat: String
 }
 
 extension User {
-    struct Login: Codable {
-        let uuid: UUID
-    }
     struct Name: Codable {
         let first: String
         let last: String
+    }
+    struct Login: Codable {
+        let uuid: UUID
     }
     struct Dob: Codable {
         let date: String
@@ -36,5 +37,11 @@ extension User {
         let large: URL
         let medium: URL
         let thumbnail: URL
+    }
+}
+
+extension User.Name: CustomStringConvertible {
+    var description: String {
+        return "\(first) \(last)"
     }
 }
