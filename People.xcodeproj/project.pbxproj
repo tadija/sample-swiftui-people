@@ -39,6 +39,7 @@
 		8B3DFBF923819BD7009D5617 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		8B3DFBFB23819CF1009D5617 /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
 		8B3DFBFD2381A13B009D5617 /* UserDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataLoader.swift; sourceTree = "<group>"; };
+		8B444B2D2381B84800A2E8C8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		8BA3E0752380CA5700B1C788 /* users.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -56,6 +57,7 @@
 		8B1043012380BECF009BD218 = {
 			isa = PBXGroup;
 			children = (
+				8B444B2D2381B84800A2E8C8 /* README.md */,
 				8B10430C2380BECF009BD218 /* People */,
 				8B10430B2380BECF009BD218 /* Products */,
 			);
