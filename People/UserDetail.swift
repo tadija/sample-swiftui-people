@@ -12,12 +12,31 @@ struct UserDetail: View {
     let user: User
 
     var body: some View {
-        VStack {
+        VStack(spacing: 20) {
             RemoteImage(url: user.picture.large)
-            Text("Age: \(user.dob.age)")
-            Text(user.email)
+                .clipShape(Circle())
+                .overlay(
+                    Circle()
+                    .stroke(Color.accentColor, lineWidth: 4)
+                )
+                .padding([.top], 20)
+
+            Button(user.email) {
+                print("send email to: \(self.user.email)")
+            }
+            .frame(maxWidth: .infinity)
+            .padding()
+            .font(.headline)
+            .background(Color.accentColor)
+            .foregroundColor(.white)
+            .cornerRadius(4)
+            .padding()
+
+            Spacer()
         }
-        .navigationBarTitle(Text(user.name.description))
+        .navigationBarTitle(
+            Text("\(user.name.description) (\(user.dob.age))")
+        )
     }
 }
 

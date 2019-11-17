@@ -15,15 +15,29 @@ struct UserRow: View {
         NavigationLink(destination: UserDetail(user: user)) {
             HStack {
                 RemoteImage(url: user.picture.thumbnail)
+                    .clipShape(Circle())
+                    .overlay(
+                        Circle()
+                        .stroke(Color.accentColor, lineWidth: 2)
+                    )
 
                 VStack(alignment: .leading) {
                     Text(user.name.description)
+                        .font(.headline)
                     Text("Age: \(user.dob.age)")
+                        .font(.footnote)
                 }
+                .padding()
 
                 Spacer()
 
                 Text(user.nat)
+                    .font(.caption)
+                    .fontWeight(.black)
+                    .frame(width: 32, height: 32, alignment: .center)
+                    .background(Color.accentColor)
+                    .clipShape(Circle())
+                    .foregroundColor(.white)
             }
         }
     }
