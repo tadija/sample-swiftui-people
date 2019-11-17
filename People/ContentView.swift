@@ -9,8 +9,10 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var users: UserModelController
+    
     var body: some View {
-        Text("Hello, World!")
+        Text(users.all.first?.name.last ?? "")
     }
 }
 
